@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boris Trucking Company</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Boris Trucking Inc.</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1><i class="fas fa-truck"></i> Reliable cargo transportation throughout the country</h1>
+            <p>We guarantee fast and safe delivery of your cargo!</p>
+            <a href="#contact" class="cta-button">Order a service</a>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+            <img src="images/hero-image.jpg" alt="Грузовой транспорт">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature" data-aos="fade-up">
+            <i class="fas fa-clock"></i>
+            <h3>Fastest delivery</h3>
+            <p>We deliver cargo in the shortest possible time.</p>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Reliability</h3>
+            <p>Your cargo is safe with us.</p>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>Competitive prices</h3>
+            <p>We offer the best prices on the market.</p>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Инициализация AOS
+    </script>
+</body>
+</html>
