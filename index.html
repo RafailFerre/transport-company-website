@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boris Trucking Company</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chat-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -57,7 +58,34 @@
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init(); // Инициализация AOS
+        AOS.init(); // Initialize AOS
     </script>
+
+    <!-- Chat button -->
+    <button id="chat-button" class="chat-button">
+        <i class="fas fa-comments"></i> Chat with us
+    </button>
+
+    <!-- Chat window -->
+    <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+            <h3>Chat with us</h3>
+            <button id="close-chat" class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body">
+            <p>Ask your question and we will answer you as soon as possible.</p>
+            <textarea id="chat-message" placeholder="Enter your message..."></textarea>
+        </div>
+        <div class="chat-footer">
+            <button id="send-message" class="send-button">Sent</button>
+        </div>
+        <!-- Notification -->
+        <div id="notification" class="notification">
+            <span id="notification-message"></span>
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+
 </body>
 </html>
