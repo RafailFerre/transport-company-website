@@ -119,6 +119,25 @@
     animation: fadeInOut 3s ease-in-out; /* Animate the notification */
 }
 
+.chat-body input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.chat-body textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+}
+
 @keyframes fadeInOut {
     0% {
         opacity: 0;

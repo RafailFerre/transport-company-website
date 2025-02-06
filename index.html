@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+            // Инициализация EmailJS
+            emailjs.init('newAGTm6SuSdQyse_'); // Замените YOUR_PUBLIC_KEY на ваш публичный ключ из EmailJS
+        </script>
 </head>
 <body>
     <header>
@@ -66,18 +72,21 @@
         <i class="fas fa-comments"></i> Chat with us
     </button>
 
-    <!-- Chat window -->
+    <!-- Всплывающее окно чата -->
     <div id="chat-window" class="chat-window">
         <div class="chat-header">
-            <h3>Chat with us</h3>
+            <h3>Чат с нами</h3>
             <button id="close-chat" class="close-chat"><i class="fas fa-times"></i></button>
         </div>
         <div class="chat-body">
-            <p>Ask your question and we will answer you as soon as possible.</p>
-            <textarea id="chat-message" placeholder="Enter your message..."></textarea>
+            <p>Задайте ваш вопрос, и мы ответим вам в ближайшее время.</p>
+            <input type="text" id="chat-name" placeholder="Ваше имя" required>
+            <input type="email" id="chat-email" placeholder="Ваш email" required>
+            <input type="tel" id="chat-phone" placeholder="Ваш телефон" required>
+            <textarea id="chat-message" placeholder="Введите ваше сообщение..." required></textarea>
         </div>
         <div class="chat-footer">
-            <button id="send-message" class="send-button">Sent</button>
+            <button id="send-message" class="send-button">Отправить</button>
         </div>
         <!-- Notification -->
         <div id="notification" class="notification">
