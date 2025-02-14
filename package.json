@@ -4,9 +4,14 @@
   "description": "transport-company-website for trucking company",
   "main": "index.js",
   "scripts": {
-    "start": "index.html"
+    "start": "index.html",
+    "test": "test.js"
   },
   "keywords": [],
   "author": "Rafail Ferre",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "dotenv-webpack": "^8.1.0"
+  }
 }
