@@ -1,0 +1,139 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the header "Boris Trucking Inc." */
+header {
+    background: #180a39;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Styles for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles for the logo "Boris Trucking Inc." */
+.logo a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Styles for the navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the hero image and content background */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background: #dadada;
+}
+
+/* Size for the hero image */
+.hero-content {
+    max-width: 50%;
+}
+
+/* Shadow for hero image default */
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #aa7de1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Shadow for hero image hover */
+.hero-image img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 16px rgba(101, 9, 161, 0.811);
+}
+
+
+/* Styles for content of main slogan */
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #3b1f7d;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #333; 
+    margin: 20px 0;
+}
+
+/* Styles for content of truck icon */
+.hero-content h1 i {
+    margin-right: 10px;
+    color: #ff8000; 
+}
+
+/* Styles for Order a service button */
+.cta-button {
+    background: #6a37e3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Styles for Order a service button hover */
+.cta-button:hover {
+    background: #d800bf;
+    transform: scale(1.1);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: white;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature i {
+    font-size: 3.5rem;
+    color: #5f26d0; 
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
