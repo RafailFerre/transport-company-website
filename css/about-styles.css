@@ -6,14 +6,14 @@ body {
     box-sizing: border-box;
 }
 
-/* Styles for the header "Boris Trucking Inc." */
+/* Header styles */
 header {
     background: #180a39;
     padding: 10px 20px;
     color: white;
 }
 
-/* Styles for the navigation bar */
+/* Navigation bar styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -32,7 +32,7 @@ nav {
     text-decoration: underline;
 }
 
-/* Styles for the navigation links */
+/* Navigation links styles */
 .nav-links {
     list-style: none;
     display: flex;
@@ -50,89 +50,81 @@ nav {
     text-decoration: underline;
 }
 
-/* Styles for the hero image and content background */
-.hero {
+/* About Us section styles and content background */
+.about-section {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
     justify-content: space-between;
     padding: 50px 20px;
     background: #dadada;
     position: relative; /* For proper positioning */
 }
 
-/* Size for the hero image */
-.hero-content {
+.about-content {
     max-width: 50%;
+    z-index: 1; /* Text above the image */
+    margin-top: -30px; /* Move text up */
 }
 
-/* Styles for content of main slogan */
-.hero-content h1 {
+.about-content h1 {
     font-size: 2.5rem;
     color: #3b1f7d;
-    z-index: 1; /* Text above the image */
+    margin-bottom: 20px;
 }
 
-.hero-content p {
-    font-size: 1.2rem;
-    color: #333; 
-    margin: 20px 0;
-    z-index: 1; /* Text above the image */
+.about-content p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify; /* Justify text */
+}
+
+.about-content p strong {
+    color: #6a37e3;
 }
 
 /* Styles for content of truck icon */
-.hero-content h1 i {
+.about-content h1 i {
     margin-right: 10px;
     color: #ff8000; 
 }
 
-/* Shadow for hero image default */
-.hero-image img {
-    max-width: 100%;
+/* Styles for the image */
+.about-image img {
+    max-width: 98%;
+    margin-left: 20px; /* Move image to the right */
     border-radius: 10px;
     box-shadow: 0 4px 8px #aa7de1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 0; /* Image below the text */
 }
 
-/* Shadow for hero image hover */
-.hero-image img:hover {
-    transform: scale(1.04);
+.about-image img:hover {
+    transform: scale(1.02); /* Slight scaling on hover */
     box-shadow: 0 8px 16px rgba(101, 9, 161, 0.811);
 }
 
-.hero-video {
+/* About Video section styles */
+.about-video {
     max-width: 50%;
+    margin-left: 20px;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden; /* Чтобы скрыть углы видео за скругленными краями */
     box-shadow: 0 4px 8px #aa7de1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hero-video video {
+.about-video video {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 10px;
 }
 
-.hero-video:hover {
+.about-video:hover {
     transform: scale(1.04);
     box-shadow: 0 8px 16px rgba(101, 9, 161, 0.811);
-}
-
-/* Styles for Order a service button */
-.cta-button {
-    background: #6a37e3;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-
-/* Styles for Order a service button hover */
-.cta-button:hover {
-    background: #d800bf;
-    transform: scale(1.1);
 }
 
 /* Styles for the features icons */
@@ -165,7 +157,7 @@ nav {
     color: #666;
 }
 
-/* Styles for the footer */
+/* Footer styles */
 footer {
     background: #180a39;
     color: white;
