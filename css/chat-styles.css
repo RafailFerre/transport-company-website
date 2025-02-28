@@ -34,6 +34,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: none; /* Hide chat window by default */
     flex-direction: column;
+    z-index: 2;
 }
 
 .chat-header {
