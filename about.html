@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boris Trucking Company</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>About Us | Boris Trucking Inc.</title>
+    <link rel="stylesheet" href="css/about-styles.css">
     <link rel="stylesheet" href="css/chat-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- EmailJS -->
     <script src="js/chat-config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-        emailjs.init(EMAILJS_PUBLIC_KEY);
+        // Initialize EmailJS
+        emailjs.init(EMAILJS_PUBLIC_KEY); // Use your EmailJS public key
     </script>
 </head>
 <body>
+    <!-- Header and Navigation -->
     <header>
         <nav>
             <div class="logo">
@@ -31,32 +35,35 @@
         </nav>
     </header>
 
-    <!-- Hero Section with Parallax Effect -->
-    <section class="hero">
-        <div class="hero-content" data-aos="fade-up">
-            <h1><i class="fas fa-truck"></i> Reliable cargo transportation throughout the country</h1>
-            <p>We guarantee fast and safe delivery of your cargo!</p>
-            <a href="#contact" class="cta-button">Order a service</a>
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="about-content" data-aos="fade-up">
+            <h1><i class="fas fa-truck"></i> About Us</h1>
+            <p>
+                Welcome to <strong>Boris Trucking Inc.</strong>, your trusted partner in cargo transportation since 2010.
+                We specialize in providing fast, reliable, and secure delivery services across the country.
+            </p>
+            <p>
+                Our fleet consists of modern trucks that are regularly maintained to ensure the highest level of safety
+                and efficiency. Whether you're an individual or a business, we offer tailored solutions to meet your
+                transportation needs.
+            </p>
+            <p>
+                At Boris Trucking Inc., we pride ourselves on our professional team with years of experience in logistics
+                and transportation. We are committed to delivering your cargo on time and in perfect condition.
+            </p>
         </div>
-        <div class="hero-image" id="hero-image">
-            <img src="images/truck-future.jpeg" alt="Truck">
+        <div class="about-video" data-aos="fade-left">
+            <video autoplay muted loop playsinline>
+                <source src="videos/truck-video-3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
+        <!-- <div class="about-image" data-aos="fade-left">
+            <img src="images/truck-about.jpg" alt="Truck">
+        </div> -->
     </section>
 
-    <!-- Video Section -->
-    <section class="video-section">
-        <div class="video-content">
-            <h2>We guarantee fast, reliable, and safe delivery!</h2>
-            <div class="hero-video">
-                <video autoplay muted loop playsinline>
-                    <source src="videos/truck-video-4.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
     <section class="features">
         <div class="feature" data-aos="fade-up">
             <i class="fas fa-clock"></i>
@@ -74,12 +81,6 @@
             <p>We offer the best prices on the market.</p>
         </div>
     </section>
-
-    <script src="js/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 
     <!-- Footer -->
     <footer>
@@ -117,7 +118,12 @@
         </div>
     </div>
 
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
     <script src="js/chat.js"></script>
-    <script src="js/parallax.js"></script> <!-- Parallax effect script -->
 </body>
 </html>

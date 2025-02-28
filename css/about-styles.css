@@ -1,0 +1,182 @@
+/* General styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    background: #180a39;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Navigation bar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles for the logo "Boris Trucking Inc." */
+.logo a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation links styles */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* About Us section styles and content background */
+.about-section {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between;
+    padding: 50px 20px;
+    background: #dadada;
+    position: relative; /* For proper positioning */
+}
+
+.about-content {
+    max-width: 50%;
+    z-index: 1; /* Text above the image */
+    margin-top: -30px; /* Move text up */
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    color: #3b1f7d;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify; /* Justify text */
+}
+
+.about-content p strong {
+    color: #6a37e3;
+}
+
+/* Styles for content of truck icon */
+.about-content h1 i {
+    margin-right: 10px;
+    color: #ff8000; 
+}
+
+/* Styles for the image */
+.about-image img {
+    max-width: 98%;
+    margin-left: 20px; /* Move image to the right */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #aa7de1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 0; /* Image below the text */
+}
+
+.about-image img:hover {
+    transform: scale(1.02); /* Slight scaling on hover */
+    box-shadow: 0 8px 16px rgba(101, 9, 161, 0.811);
+}
+
+/* About Video section styles */
+.about-video {
+    max-width: 50%;
+    margin-left: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* Чтобы скрыть углы видео за скругленными краями */
+    box-shadow: 0 4px 8px #aa7de1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.about-video:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 16px rgba(101, 9, 161, 0.811);
+}
+
+/* Styles for the features icons */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: white;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature i {
+    font-size: 3.5rem;
+    color: #5f26d0; 
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    background: #180a39;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-content a {
+    color: #6a37e3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #ff8000;
+}
